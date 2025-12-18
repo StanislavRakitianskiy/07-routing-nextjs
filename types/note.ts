@@ -1,4 +1,10 @@
-declare module "*.module.css" {
-  const classes: { [key: string]: string };
-  export default classes;
+export type NoteTag = "Todo" | "Work" | "Personal" | "Meeting" | "Shopping";
+
+export interface Note {
+  id: string;
+  title: string;
+  content: string;
+  tag: NoteTag;
+  createdAt: string; 
+  updatedAt: string; 
 }
