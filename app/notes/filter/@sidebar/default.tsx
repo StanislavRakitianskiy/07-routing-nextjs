@@ -4,7 +4,7 @@ import type { NoteTag } from "@/types/note";
 
 const tags: NoteTag[] = ["Todo", "Work", "Personal", "Meeting", "Shopping"];
 
-export default function SidebarNotes() {
+export default function SidebarDefault() {
   return (
     <ul className={css.menuList}>
       <li className={css.menuItem}>
