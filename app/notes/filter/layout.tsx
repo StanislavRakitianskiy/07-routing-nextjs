@@ -4,7 +4,6 @@ import css from "./FilterLayout.module.css";
 export default function FilterLayout({
   sidebar,
   children,
-  modal,
 }: {
   sidebar: ReactNode;
   children: ReactNode;
@@ -14,7 +13,6 @@ export default function FilterLayout({
     <div className={css.container}>
       <aside className={css.sidebar}>{sidebar}</aside>
       <section className={css.content}>{children}</section>
-      {modal}
     </div>
   );
 }
