@@ -6,12 +6,12 @@ import NotesClient from "./Notes.client";
 const NOTES_PER_PAGE = 12;
 
 type PageProps = {
-  params: Promise<{ tag: string[] }>;
+  params: Promise<{ slug: string[] }>;
 };
 
 export default async function FilteredNotesPage({ params }: PageProps) {
-  const { tag } = await params;
-  const selected = tag?.[0] ?? "all";
+  const { slug } = await params;
+  const selected = slug?.[0] ?? "all";
 
   const tagParam = selected === "all" ? undefined : (selected as NoteTag);
 
