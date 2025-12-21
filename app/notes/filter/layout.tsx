@@ -7,7 +7,6 @@ export default function FilterLayout({
 }: {
   sidebar: ReactNode;
   children: ReactNode;
-  modal: ReactNode;
 }) {
   return (
     <div className={css.container}>
